@@ -2,11 +2,11 @@ import React from 'react';
 
 import Card from '../card/card.component';
 
-import useFetch from '../../effects/use-fetch.effect';
+import useFetch from '../../effects/use-fetch';
 
 const User = ({ userId }) => {
   const user = useFetch(
-    `https://jsonplaceholder.typicode.com/users?id=${userId}`
+      {url: 'https://jsonplaceholder.typicode.com/users', id: userId}
   );
 
   return (

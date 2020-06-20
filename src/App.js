@@ -5,7 +5,7 @@ import Post from './components/post/post.component';
 
 import './App.css';
 
-const App = props => {
+const App = () => {
   return (
     <div className='App'>
       <User userId={5} />
